@@ -69,7 +69,7 @@ static const struct arg args[] = {
     { temp, " %s°C ",           "/sys/class/thermal/thermal_zone0/temp" },
     { ram_perc, " %s%% ",       NULL },
     { disk_perc, " %s%% ",      "/" },
-	{ run_command, "%s%% ",      "$HOME/bin/status/volume" },
+	{ run_command, "%s ",        "$HOME/bin/status/volume" },
 	{ datetime, "%s ",           " 0%u%y%m%d%H%M" },
 	{ run_command, "%s ",        "$HOME/bin/status/bat-state" },
 	{ run_command, "%s ",        "$HOME/bin/status/bat-capacity" },
