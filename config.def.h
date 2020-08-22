@@ -66,6 +66,7 @@ static const struct arg args[] = {
 	{ run_command, "%s",        "$HOME/bin/status/tor" },
 	{ run_command, "%s",        "$HOME/bin/status/vpn" },
 	{ run_command, "%s",        "$HOME/bin/status/screenkey" },
+	{ run_command, "%s",        "$HOME/bin/status/key-mon" },
 	{ run_command, "%s",        "$HOME/bin/status/record" },
 	{ run_command, "%s ",       "$HOME/bin/status/network-wlan-tfc" },
     { temp, " %s°C ",          "/sys/class/thermal/thermal_zone0/temp" },
