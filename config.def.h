@@ -63,6 +63,7 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function format           argument */
+	{ run_command,    "%s",         "echo ' '" },
 	{ run_command,    "%s",         "$HOME/bin/status/tor" },
 	{ run_command,    "%s",         "$HOME/bin/status/vpn" },
 	{ run_command,    "%s",         "$HOME/bin/status/screenkey" },
