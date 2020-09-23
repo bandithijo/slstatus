@@ -74,6 +74,7 @@ static const struct arg args[] = {
     { ram_perc,       " %s%% ",    NULL },
     { disk_perc,      " %s%% ",    "/" },
 	{ run_command,    "%s ",        "$HOME/bin/status/volume" },
+	{ run_command,    "%s ",        "$HOME/bin/status/mailbox" },
 	{ run_command,    "%s ",        "$HOME/bin/status/datetime" },
 	{ run_command,    "%s ",        "$HOME/bin/status/bat-state" },
 	{ run_command,    "%s ",        "$HOME/bin/status/bat-capacity" },
