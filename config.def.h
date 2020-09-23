@@ -62,7 +62,7 @@ static const char unknown_str[] = "";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format           argument */
+	/* function       format        argument */
 	{ run_command,    "%s",         "echo ' '" },
 	{ run_command,    "%s",         "$HOME/bin/status/record" },
 	{ run_command,    "%s",         "$HOME/bin/status/tor" },
@@ -70,9 +70,9 @@ static const struct arg args[] = {
 	{ run_command,    "%s",         "$HOME/bin/status/key-mon" },
 	{ run_command,    "%s",         "$HOME/bin/status/screenkey" },
 	{ run_command,    "%s ",        "$HOME/bin/status/network-wlan-tfc" },
-    { temp,           " %s ",      "/sys/class/thermal/thermal_zone0/temp" },
-    { ram_perc,       " %s ",      NULL },
-    { disk_perc,      " %s ",      "/" },
+    { run_command,    "%s ",        "$HOME/bin/status/cpu-temp" },
+    { run_command,    "%s ",        "$HOME/bin/status/memory" },
+    { run_command,    "%s ",        "$HOME/bin/status/filesystem" },
 	{ run_command,    "%s ",        "$HOME/bin/status/volume" },
 	{ run_command,    "%s ",        "$HOME/bin/status/mailbox" },
 	{ run_command,    "%s ",        "$HOME/bin/status/datetime" },
